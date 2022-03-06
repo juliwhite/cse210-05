@@ -1,5 +1,5 @@
 
-from tkinter.tix import COLUMN
+
 from game.shared.color import Color
 
 COLUMNS = 40
