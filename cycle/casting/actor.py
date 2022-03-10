@@ -24,10 +24,10 @@ class player:
         self._velocity = Point(0, 0)
 
     def get_color(self):
-        """Gets the actor's color as a tuple of three ints (r, g, b).
+        """Gets the player's color as a tuple of three ints (r, g, b).
         
         Returns:
-            Color: The actor's text color.
+            Color: The player's text color.
         """
         return self._color
 
