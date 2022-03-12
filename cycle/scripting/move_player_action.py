@@ -1,9 +1,9 @@
-from cycle.scripting.action import Action
+from scripting.action import Action
 
-
-class MovePlayerAction(Action): #moveplayeraction
+class MovePlayersAction(Action):
     """
     An update action that moves all the actors.
+    
     The responsibility of MoveActorsAction is to move all the actors that have a velocity greater
     than zero.
     """

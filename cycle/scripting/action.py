@@ -9,7 +9,7 @@ class Action:
         derived classes.
 
         Args:
-            cast (Cast): The cast of Actors in the game.
+            cast (Cast): The cast of Players in the game.
             script (Script): The script of Actions in the game.
         """
         pass

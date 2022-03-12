@@ -8,6 +8,7 @@ class VideoService:
 
     def __init__(self, debug = False):
         """Constructs a new VideoService using the specified debug mode.
+        
         Args:
             debug (bool): whether or not to draw in debug mode.
         """
