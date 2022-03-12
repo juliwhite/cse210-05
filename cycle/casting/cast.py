@@ -21,7 +21,9 @@ class Cast:
         if not player in self._players[group]:
             self._players[group].append(player)
 
+
     def get_players(self, group):
+   
         '''
         Gets the players in the given group.
         '''
@@ -31,6 +33,7 @@ class Cast:
         return results
 
     def get_all_players(self):
+
         '''
         Gets all the players in the cast.
         '''

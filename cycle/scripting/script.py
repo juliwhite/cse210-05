@@ -1,5 +1,4 @@
 
-
 class Script:
     """A collection of actions.
 

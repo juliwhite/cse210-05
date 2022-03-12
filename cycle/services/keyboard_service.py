@@ -1,12 +1,10 @@
 
-
 import pyray
 from shared.point import Point
 
 
 class KeyboardService:
     """Detects player input. 
-    
     The responsibility of a KeyboardService is to indicate whether or not a key is up or down.
 
     Attributes:

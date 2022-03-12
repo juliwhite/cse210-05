@@ -1,5 +1,4 @@
 
-
 from scripting.action import Action
 
 
@@ -22,3 +21,4 @@ class MovePlayerAction(Action):
         players = cast.get_all_players()
         for player in players:
             player.move_next()
+       
