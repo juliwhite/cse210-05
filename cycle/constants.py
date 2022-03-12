@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 from shared.color import Color
-=======
-from cycle.shared.color import Color
->>>>>>> 8e7107028735c1e54c1141a0f6af60b912121b35
 
 COLUMNS = 40
 ROWS = 20
