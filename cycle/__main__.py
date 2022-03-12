@@ -1,7 +1,7 @@
 from casting.cast import Cast
 from casting.grow import Grow
 from casting.score import Score
-from casting.snake import Snake
+from casting.cycle import Cycle
 from directing.director import Game
 from scripting.script import Script
 from scripting.control_player_action import ControlPlayersAction
@@ -16,18 +16,13 @@ from shared.color import Color
 from shared.point import Point
 import constants
 
-
 def main():
     
     # create the cast
     cast = Cast()
-    # cast.add_actor("foods", Food())
-    # cast.add_actor("snakes", Snake())
-    # cast.add_actor("red cycle", Snake())
-    # cast.add_actor("blue cycle", Snake())
 
-    cycle_one = Snake()
-    cycle_two = Snake()
+    cycle_one = Cycle()
+    cycle_two = Cycle()
     
     score_one = Score("One")
     score_two = Score("Two")
