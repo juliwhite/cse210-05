@@ -30,33 +30,22 @@ class Score(Actor):
 
     def prepare_score(self, score):
         """Prepares the body of the score"""
-        # cast = Cast()
-        # scores = cast.get_actors("scores")
-
-        # score1 = scores[0]
-        # score2 = scores[1]
-
-    
-
+        
         if score == "One":
             """This is for the first player's score. """
             score = Score("One")
             x = int(constants.MAX_X + 0.1 * constants.CELL_SIZE)
             y = int(constants.MAX_Y)
-            # print('in game->casting->score.py if score == "One" print this message.')
         
         elif score == "Two":
             """This is for the second player's score. """
             score = Score("Two")
             x = int(constants.MAX_X - 6.6 * constants.CELL_SIZE)
             y = int(constants.MAX_Y)
-            # print('in game->casting->score.py elif score == "Two" print this message.')
         
         else:
             x = int(constants.MAX_X / 2)
             y = int(constants.MAX_Y / 2)
-            # print('in game->casting->score.py else print this message.')
-        
-        # print(f"x = {x}, y = {y}")
+            
         position = Point(x, y)
         self.set_position(position)

@@ -21,7 +21,7 @@ class ControlPlayersAction(Action):
         """
         self._keyboard_service = keyboard_service
         self._red_direction = Point(0, -constants.CELL_SIZE)
-        self._blue_direction = Point(0, -constants.CELL_SIZE)
+        self._green_direction = Point(0, -constants.CELL_SIZE)
 
     def execute(self, cast, script):
         """Executes the control actors action.
@@ -54,19 +54,19 @@ class ControlPlayersAction(Action):
 
         # left
         if self._keyboard_service.is_key_down('j'):
-            self._blue_direction = Point(-constants.CELL_SIZE, 0)
+            self._green_direction = Point(-constants.CELL_SIZE, 0)
         
         # right
         if self._keyboard_service.is_key_down('l'):
-            self._blue_direction = Point(constants.CELL_SIZE, 0)
+            self._green_direction = Point(constants.CELL_SIZE, 0)
         
         # up
         if self._keyboard_service.is_key_down('i'):
-            self._blue_direction = Point(0, -constants.CELL_SIZE)
+            self._green_direction = Point(0, -constants.CELL_SIZE)
         
         # down
         if self._keyboard_service.is_key_down('k'):
-            self._blue_direction = Point(0, constants.CELL_SIZE)
+            self._green_direction = Point(0, constants.CELL_SIZE)
         
-        blue_cycle = cycles[1]
-        blue_cycle.turn_head(self._blue_direction)
+        green_cycle = cycles[1]
+        green_cycle.turn_head(self._green_direction)
