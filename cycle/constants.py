@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from shared.color import Color
+=======
+from cycle.shared.color import Color
+>>>>>>> 8e7107028735c1e54c1141a0f6af60b912121b35
 
 COLUMNS = 40
 ROWS = 20
@@ -11,5 +15,5 @@ CAPTION = "Snake"
 SNAKE_LENGTH = 8
 WHITE = Color(255, 255, 255)
 RED = Color(255, 0, 0)
+YELLOW = Color(255, 255, 0)
 GREEN = Color(0, 255, 0)
-BLUE = Color(0, 0, 255)

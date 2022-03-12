@@ -17,7 +17,7 @@ class Actor:
     """
 
     def __init__(self):
-        """Constructs a new Actor."""
+        """Constructs a new Player."""
         self._text = ""
         self._font_size = 15
         self._color = Color(255, 255, 255)
@@ -25,48 +25,49 @@ class Actor:
         self._velocity = Point(0, 0)
 
     def get_color(self):
-        """Gets the actor's color as a tuple of three ints (r, g, b).
+        """Gets the player's color as a tuple of three ints (r, g, b).
         
         Returns:
-            Color: The actor's text color.
+            Color: The player's text color.
         """
         return self._color
 
     def get_font_size(self):
-        """Gets the actor's font size.
+        """Gets the player's font size.
         
         Returns:
-            Point: The actor's font size.
+            Point: The player's font size.
         """
         return self._font_size
 
     def get_position(self):
-        """Gets the actor's position in 2d space.
+        """Gets the player's position in 2d space.
         
         Returns:
-            Point: The actor's position in 2d space.
+            Point: The player's position in 2d space.
         """
         return self._position
     
     def get_text(self):
-        """Gets the actor's textual representation.
+        """Gets the player's textual representation.
         
         Returns:
-            string: The actor's textual representation.
+            string: The player's textual representation.
         """
         return self._text
 
     def get_velocity(self):
-        """Gets the actor's speed and direction.
+        """Gets the player's speed and direction.
         
         Returns:
-            Point: The actor's speed and direction.
+            Point: The player's speed and direction.
         """
         return self._velocity
     
     def move_next(self):
-        """Moves the actor to its next position according to its velocity. Will wrap the position 
-        from one side of the screen to the other when it reaches the given maximum x and y values.
+        """Moves the player to its next position according to its velocity. 
+        Will wrap the position from one side of the screen to the 
+        other when it reaches the given maximum x and y values.
         
         Args:
             max_x (int): The maximum x value.

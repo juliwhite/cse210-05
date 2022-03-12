@@ -3,7 +3,6 @@ import constants
 from casting.actor import Actor
 from shared.point import Point
 
-
 class Grow(Actor):
     """
     A tasty item that snakes like to eat.
