@@ -1,7 +1,7 @@
 
 import constants
-from cycle.shared.color import Color
-from cycle.shared.point import Point
+from shared.color import Color
+from shared.point import Point
 
 
 class Player:
