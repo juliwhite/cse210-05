@@ -1,5 +1,4 @@
 
-
 class Cast:
     '''
     A collection of players.
@@ -22,7 +21,9 @@ class Cast:
         if not player in self._players[group]:
             self._players[group].append(player)
 
-    def get_actors(self, group):
+
+    def get_players(self, group):
+   
         '''
         Gets the players in the given group.
         '''
@@ -31,7 +32,8 @@ class Cast:
             results = self._players[group].copy()
         return results
 
-    def get_all_actors(self):
+    def get_all_players(self):
+
         '''
         Gets all the players in the cast.
         '''

@@ -1,9 +1,8 @@
+
 class Point:
     """A distance from a relative origin (0, 0).
-
     The responsibility of Point is to hold and provide information about itself. Point has a few 
     convenience methods for adding, scaling, and comparing them.
-
     Attributes:
         _x (integer): The horizontal distance from the origin.
         _y (integer): The vertical distance from the origin.
@@ -33,8 +32,7 @@ class Point:
         return Point(x, y)
 
     def equals(self, other):
-        """Whether or not this Point is equal to the given one.
-
+        """Whether or not this Point is equal to the given one
         Args:
             other (Point): The Point to compare.
 
@@ -71,7 +69,7 @@ class Point:
 
     def scale(self, factor):
         """
-        Scales the point by the provided factor.
+        Scales the point by the provided factor
 
         Args:
             factor (int): The amount to scale.

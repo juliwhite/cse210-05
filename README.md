@@ -22,6 +22,7 @@ You can also run the program from an IDE like VS code. Start your IDE and open t
 1. Players keep moving and turning but don't run into each other. 
 
 ## Authors:
-***Tjoe Jannnuar Teddy Herjanto Herjanto.***
+***Tjoe Jannnuar Teddy Herjanto Herjanto.***  
+
 ***Julieta White*** 
 

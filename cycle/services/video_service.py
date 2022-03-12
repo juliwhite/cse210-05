@@ -1,3 +1,4 @@
+
 import pyray
 import constants
 
@@ -9,6 +10,7 @@ class VideoService:
 
     def __init__(self, debug = False):
         """Constructs a new VideoService using the specified debug mode.
+
         Args:
             debug (bool): whether or not to draw in debug mode.
         """
@@ -27,17 +29,17 @@ class VideoService:
         if self._debug == True:
             self._draw_grid()
     
-    def draw_actor(self, actor, centered=False):
-        """Draws the given actor's text on the screen.
+    def draw_player(self, player, centered=False):
+        """Draws the given player's text on the screen.
 
         Args:
-            actor (Actor): The actor to draw.
+            player (Player): The player to draw.
         """ 
-        text = actor.get_text()
-        x = actor.get_position().get_x()
-        y = actor.get_position().get_y()
-        font_size = actor.get_font_size()
-        color = actor.get_color().to_tuple()
+        text = player.get_text()
+        x = player.get_position().get_x()
+        y = player.get_position().get_y()
+        font_size = player.get_font_size()
+        color = player.get_color().to_tuple()
 
         if centered:
             width = pyray.measure_text(text, font_size)
@@ -46,14 +48,14 @@ class VideoService:
             
         pyray.draw_text(text, x, y, font_size, color)
         
-    def draw_actors(self, actors, centered=False):
-        """Draws the text for the given list of actors on the screen.
+    def draw_players(self, players, centered=False):
+        """Draws the text for the given list of players on the screen.
 
         Args:
-            actors (list): A list of actors to draw.
+            player (list): A list of players to draw.
         """ 
-        for actor in actors:
-            self.draw_actor(actor, centered)
+        for player in players:
+            self.draw_player(player, centered)
     
     def flush_buffer(self):
         """Copies the buffer contents to the screen. This method should be called at the end of
