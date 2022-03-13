@@ -29,17 +29,17 @@ class VideoService:
         if self._debug == True:
             self._draw_grid()
     
-    def draw_player(self, player, centered=False):
+    def draw_actor(self, actor, centered=False):
         """Draws the given player's text on the screen.
 
         Args:
             player (Player): The player to draw.
         """ 
-        text = player.get_text()
-        x = player.get_position().get_x()
-        y = player.get_position().get_y()
-        font_size = player.get_font_size()
-        color = player.get_color().to_tuple()
+        text = actor.get_text()
+        x = actor.get_position().get_x()
+        y = actor.get_position().get_y()
+        font_size = actor.get_font_size()
+        color = actor.get_color().to_tuple()
 
         if centered:
             width = pyray.measure_text(text, font_size)
@@ -48,14 +48,14 @@ class VideoService:
             
         pyray.draw_text(text, x, y, font_size, color)
         
-    def draw_players(self, players, centered=False):
+    def draw_actors(self, actors, centered=False):
         """Draws the text for the given list of players on the screen.
 
         Args:
             player (list): A list of players to draw.
         """ 
-        for player in players:
-            self.draw_player(player, centered)
+        for actor in actors:
+            self.draw_actor(actor, centered)
     
     def flush_buffer(self):
         """Copies the buffer contents to the screen. This method should be called at the end of

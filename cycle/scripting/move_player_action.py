@@ -16,7 +16,7 @@ class MovePlayersAction(Action): #moveplayeraction
             script (Script): The script of Actions in the game.
         """
 
-        players = cast.get_all_players()
-        for player in players:
+        actors = cast.get_all_actors()
+        for player in actors:
             player.move_next()
        
