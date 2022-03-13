@@ -1,20 +1,22 @@
 from scripting.action import Action
 
-
 class MovePlayersAction(Action): #moveplayeraction
     """
     An update action that moves all the actors.
-    The responsibility of MoveActorsAction is to move all the actors that have a velocity greater
+    
+    The responsibility of MovePlayerAction is to move all the players that have a velocity greater
     than zero.
     """
 
     def execute(self, cast, script):
-        """Executes the move actors action.
+        """Executes the move players action.
 
         Args:
-            cast (Cast): The cast of Actors in the game.
+            cast (Cast): The cast of Players in the game.
             script (Script): The script of Actions in the game.
         """
-        actors = cast.get_all_actors()
-        for actor in actors:
-            actor.move_next()
+
+        players = cast.get_all_players()
+        for player in players:
+            player.move_next()
+       

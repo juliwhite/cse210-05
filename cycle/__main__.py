@@ -1,4 +1,7 @@
 
+
+import constants
+
 from casting.cast import Cast
 from casting.grow import Grow
 from casting.score import Score
@@ -15,7 +18,6 @@ from services.keyboard_service import KeyboardService
 from services.video_service import VideoService
 from shared.color import Color
 from shared.point import Point
-import constants
 
 def main():
     
